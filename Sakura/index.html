@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Асылай 1 жас — Тұсау кесер</title>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <button class="music-btn" id="musicBtn" title="Музыка">🎵</button>
+  <audio id="bgMusic" loop>
+    <source src="/Жазира Байырбекова - Тұсау кесер - ТОЙ ДУМАН (128k).mp3" type="audio/mpeg"/>
+  </audio>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Казахские орнаментные символы вместо пузырей -->
+    <div class="bubbles">
+      <span>❋</span><span>✦</span><span>❈</span><span>✧</span>
+      <span>❊</span><span>✦</span><span>❋</span><span>❈</span>
+    </div>
+
+    <div class="hero-content">
+      <div class="ornament-line">
+        <span class="ornament-sym">❖</span>
+      </div>
+
+      <div class="age-badge">🎂 1 ЖАС</div>
+      <h1 class="name">Асылай</h1>
+      <p class="subtitle">Тұсау кесер тойына шақырамыз!</p>
+
+      <div class="photo-frame">
+        <img src="/picture/WhatsApp Image 2026-05-05 at 01.23.06.jpeg" alt="" class="main-picture">
+      </div>
+
+      <div class="stars-row">✦ ❖ ✦</div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="details reveal">
+    <h2 class="details-title">Той мәліметтері</h2>
+    <div class="divider"><span class="divider-sym">❖</span></div>
+
+    <div class="cards-grid">
+      <div class="card card--date">
+        <div class="card-icon">📅</div>
+        <div class="card-label">Күні</div>
+        <div class="card-value">28 маусым 2026</div>
+      </div>
+      <div class="card card--time">
+        <div class="card-icon">⏰</div>
+        <div class="card-label">Басталу уақыты</div>
+        <div class="card-value">12:00</div>
+      </div>
+      <div class="card card--place">
+        <div class="card-icon">🏛️</div>
+        <div class="card-label">Мекен-жайы</div>
+        <div class="card-value">«Хан сарай» мейрамханасы<br/><span class="sub">«Кіші зал»</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section reveal">
+    <h2 class="countdown-title">⏳ Тойға дейін қалды</h2>
+    <div class="countdown" id="countdown">
+      <div class="count-block"><span id="days">00</span><small>күн</small></div>
+      <div class="count-sep">:</div>
+      <div class="count-block"><span id="hours">00</span><small>сағат</small></div>
+      <div class="count-sep">:</div>
+      <div class="count-block"><span id="minutes">00</span><small>минут</small></div>
+      <div class="count-sep">:</div>
+      <div class="count-block"><span id="seconds">00</span><small>секунд</small></div>
+    </div>
+  </section>
+
+  <!-- INVITE TEXT -->
+  <section class="invite-section reveal">
+    <div class="invite-box">
+      <div class="quote-mark">"</div>
+      <p class="invite-text">
+        Сіздерді біздің сүйікті перзентіміз<br/>
+        <strong>Асылайдың</strong> бірінші туған күніне арналған<br/>
+        <strong>Тұсау кесер</strong> тойына шын жүректен шақырамыз!<br/><br/>
+        Сіздің қатысуыңыз бізге өте маңызды! 💛
+      </p>
+      <div class="quote-mark quote-mark--close">"</div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section reveal">
+    <h2 class="gallery-title">Фотогалерея</h2>
+    <div class="divider"><span class="divider-sym">❖</span></div>
+    <div class="gallery-grid">
+      <img src="WhatsApp Image 2026-05-05 at 01.25.08 (1).jpeg" alt="" class="gallery-item">
+      <img src="WhatsApp Image 2026-05-05 at 01.25.08.jpeg" alt="" class="gallery-item">
+      <img src="WhatsApp Image 2026-05-05 at 01.25.09.jpeg" alt="" class="gallery-item">
+    </div>
+    <p class="gallery-hint">* Фотосуреттер жақында жүктеледі</p>
+  </section>
+
+  <!-- HOSTS -->
+  <section class="hosts-section reveal">
+    <h2 class="hosts-title">Шақыртушылар</h2>
+    <div class="divider"><span class="divider-sym">❖</span></div>
+    <div class="hosts-box">
+      <div class="host-item">
+        <div class="host-icon">👴👵</div>
+        <div class="host-label">Ата-Әжесі</div>
+      </div>
+      <div class="host-divider">✦</div>
+      <div class="host-item">
+        <div class="host-icon">👨‍👩</div>
+        <div class="host-label">Ернар & Сауар</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="balloons">🎈 🎀 🎊 🎈</div>
+    <p>Асылайдың тойы · 2026 · Сізді күтеміз! 💛</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
